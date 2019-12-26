@@ -8,7 +8,7 @@ y.value as yield,
 ha.value as area,
 prod.value as production
 from
-price_lcu as p,
+price_lcu_common as p,
 yield as y,
 harvest_area as ha,
 production as prod
