@@ -1,0 +1,183 @@
+{UTF-8}
+"off-farm income"  = A FUNCTION OF( )
+	~	
+	~		|
+
+crop quality  = A FUNCTION OF( storage facility)
+	~	
+	~		|
+
+income level  = A FUNCTION OF( "off-farm income",Total Production Output)
+	~	
+	~		|
+
+price  = A FUNCTION OF( crop quality,demand,favorable pricing policies,harvest season\
+		,input price,labour costs,Total Production Output,transportation costs)
+	~	
+	~		|
+
+proximity to market  = A FUNCTION OF( )
+	~	
+	~		|
+
+harvest season  = A FUNCTION OF( )
+	~	
+	~		|
+
+storage facility  = A FUNCTION OF( income level)
+	~	
+	~		|
+
+transportation costs  = A FUNCTION OF( proximity to market)
+	~	
+	~		|
+
+Yield  = A FUNCTION OF( area harvested,"good weather/temperature","pest/disease attack"\
+		)
+	~	
+	~		|
+
+demand  = A FUNCTION OF( income level,population,price,Total Production Output)
+	~	
+	~		|
+
+Total Production Output  = A FUNCTION OF( area harvested,Yield)
+	~	
+	~		|
+
+area harvested  = A FUNCTION OF( price,suitable land available)
+	~	
+	~		|
+
+favorable pricing policies  = A FUNCTION OF( )
+	~	
+	~		|
+
+"good weather/temperature"  = A FUNCTION OF( )
+	~	
+	~		|
+
+input price  = A FUNCTION OF( )
+	~	
+	~		|
+
+labour costs  = A FUNCTION OF( )
+	~	
+	~		|
+
+"pest/disease attack"  = A FUNCTION OF( )
+	~	
+	~		|
+
+population  = A FUNCTION OF( )
+	~	
+	~		|
+
+suitable land available  = A FUNCTION OF( demand)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|64-64-128|96,96,100,0
+10,1,price,536,201,19,11,8,3,0,18,0,0,0,0,-1--1--1,0-0-0,|12|B|255-0-0
+10,2,area harvested,323,223,52,11,8,3,0,18,0,0,0,0,-1--1--1,0-0-0,|12|B|255-0-0
+10,3,Yield,376,401,19,11,8,3,0,18,0,0,0,0,-1--1--1,0-0-0,|12|B|255-0-0
+10,4,Total Production Output,556,366,58,19,8,3,0,18,0,0,0,0,-1--1--1,0-0-0,|12|B|255-0-0
+1,5,2,3,1,0,43,0,3,64,0,0-128-0,|12||0-0-0,1|(315,316)|
+1,6,3,4,1,0,43,0,3,64,0,0-128-0,|12||0-0-0,1|(493,411)|
+1,7,4,1,1,0,45,0,3,64,0,255-0-0,|12||0-0-0,1|(584,294)|
+1,8,1,2,1,0,43,0,3,65,0,0-128-0,|12||0-0-0,1|(435,165)|
+10,9,"good weather/temperature",307,504,66,19,8,3,0,0,0,0,0,0
+10,10,"pest/disease attack",231,399,59,11,8,3,0,0,0,0,0,0
+10,11,transportation costs,617,88,44,19,8,3,0,0,0,0,0,0
+10,12,labour costs,801,169,39,11,8,3,0,0,0,0,0,0
+10,13,favorable pricing policies,486,83,53,19,8,3,0,0,0,0,0,0
+1,14,13,1,0,0,43,0,2,0,0,-1--1--1,|12||0-0-0,1|(509,139)|
+1,15,11,1,0,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(577,142)|
+1,16,12,1,0,0,43,0,2,128,0,-1--1--1,|12||0-0-0,1|(665,184)|
+1,17,9,3,0,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(339,454)|
+1,18,10,3,0,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(316,399)|
+10,19,demand,661,273,26,11,8,3,0,0,0,0,0,0
+1,20,19,1,1,0,43,0,3,64,0,0-128-0,|12||0-0-0,1|(630,209)|
+10,21,input price,742,121,34,11,8,3,0,0,0,0,0,0
+1,22,21,1,0,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(641,159)|
+10,23,income level,766,355,39,11,8,3,0,0,0,0,0,0
+10,24,population,680,440,34,11,8,3,0,0,0,0,0,0
+1,25,23,19,0,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(719,318)|
+1,26,24,19,0,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(671,363)|
+1,27,1,19,1,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(576,294)|
+10,28,suitable land available,224,107,40,19,8,3,0,0,0,0,0,0
+1,29,28,2,0,0,45,0,2,64,0,-1--1--1,|12||0-0-0,1|(271,163)|
+10,30,demand,124,191,35,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+1,31,30,28,0,0,43,0,2,64,0,-1--1--1,|12||0-0-0,1|(163,157)|
+1,32,2,4,1,0,43,0,3,64,0,255-0-0,|12||0-0-0,1|(406,328)|
+1,33,4,19,1,0,43,0,3,128,0,0-128-0,|12||0-0-0,1|(616,334)|
+12,34,0,451,268,60,60,5,135,0,1,-1,0,0,0,255-0-0,0-0-0,|12||0-0-0
+Farm Supply-Price Balance
+12,35,0,600,251,38,38,5,135,0,0,-1,0,0,0
+Demand-Price Balance
+12,36,0,422,376,34,34,5,135,0,1,-1,0,0,0,0-128-0,0-128-0,|12||0-0-0
+Output Growth
+10,37,harvest season,368,96,46,11,8,3,0,2,0,0,0,0,-1--1--1,0-0-0,|0||255-255-0
+10,38,storage facility,861,292,45,11,8,3,0,2,0,0,0,0,-1--1--1,0-0-0,|0||255-255-0
+10,39,crop quality,822,210,38,11,8,3,0,2,0,0,0,0,-1--1--1,0-0-0,|0||255-255-0
+10,40,proximity to market,782,62,39,19,8,3,0,2,0,0,0,0,-1--1--1,0-0-0,|0||255-255-0
+10,41,"off-farm income",824,434,50,11,8,3,0,2,0,0,0,0,-1--1--1,0-0-0,|0||255-255-0
+1,42,41,23,0,0,0,0,0,64,0,-1--1--1,,1|(799,400)|
+1,43,40,11,0,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(708,73)|
+1,44,37,1,0,0,45,0,2,64,0,-1--1--1,|0||-1--1--1,1|(445,144)|
+1,45,38,39,1,0,43,0,3,64,0,255-255-0,|0||-1--1--1,1|(853,246)|
+1,46,39,1,1,0,43,0,3,0,0,255-255-0,|0||-1--1--1,1|(747,183)|
+1,47,4,23,1,0,43,0,3,192,0,255-255-0,|0||-1--1--1,1|(655,387)|
+1,48,23,38,1,0,43,0,3,64,0,255-255-0,|0||-1--1--1,1|(816,338)|
+12,49,0,753,259,56,56,5,135,0,1,-1,0,0,0,255-255-0,0-0-0,|0||0-0-0
+Quality Improvement
+///---\\\
+:L<%^E!@
+9:Current
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:0,
+34:0,
+5:crop quality
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+42:1
+24:0
+25:0
+26:0
