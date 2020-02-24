@@ -1,4 +1,5 @@
 
+create view time_series as 
 select
 p.year,
 p.name,
@@ -20,4 +21,4 @@ y.year = ha.year and
 ha.item_code = prod.item_code and
 ha.year = prod.year
 
-order by p.name, p.year
+order by p.name, p.year;
